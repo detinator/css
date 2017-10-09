@@ -1,0 +1,140 @@
+@media(min-width:900px) {
+	/*Define Page Font*/
+	@font-face {
+		font-family: "Dancing Script";
+		src: url("Fonts/Dancing Script.ttf");
+	}
+	/*Set Page Background Color and Assets*/
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #02010A;
+		animation: pageLoad 2.5s;
+	}
+	.page_content {
+		width: 900px;
+		padding: 10px;
+		margin: 0 auto;
+	}
+	/*Full Page Animation Start*/
+	@keyframes pageLoad {
+		0% {
+			margin-top: 150%
+		}
+		60% {
+			margin-top: -5%
+		}
+		100% {
+			margin-top: 0%
+		}
+	}
+	/*Full Page Animation End*/
+	/*Header Content*/
+	/*Header Block*/
+	header {
+		background-color: #5B7989;
+		border-radius: 10px 10px 0px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+	/*Site Name (Brand)*/
+	.block_brand {
+		font-family: "Dancing Script";
+		color: white;
+		text-align: left;
+		text-shadow: 2px 2px 2px #02010A;
+		padding-left: 20px;
+		padding-top: 15px;
+	}
+	/*Site Menu*/
+	.block_menu {}
+	.block_menu nav {
+		font-family: "Dancing Script";
+		margin-right: 50px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	.block_menu nav ul li {
+		display: inline;
+	}
+	.block_menu nav ul li a {
+		text-decoration: none;
+		border-radius: 10px;
+		display: inline-block;
+		background-color: #82C386;
+		color: #FFFFFF;
+		padding: 10px;
+	}
+	.block_menu nav ul li a:hover {
+		text-decoration: none;
+		border-radius: 10px;
+		color: #000000;
+		background-color: #33B5E5;
+		box-shadow: 2px 2px 4px #000000;
+	}
+	#active a {
+		text-decoration: none;
+		border-radius: 10px;
+		color: #FFFFFF;
+		background-color: #C6D5C5;
+		box-shadow: 0.5px 0.5px 1px #000000;
+	}
+	/*Header End*/
+	/*Main Content Gallery*/
+	.gallery_box {
+		background: #D5C75F;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.gallery {
+		width: 30%;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.gallery img {
+		width: 100%;
+		border: 1px solid;
+		box-shadow: 2px 2px #02010A;
+	}
+	/*Apply Image Effects*/
+	#gal1 {
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+	#gal2, #gal4, #gal6 {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	#gal3 {
+		-webkit-filter: sepia(90%);
+		filter: sepia(90%);
+	}
+	/*Image Effects End*/
+	/*Main Content Gallery End*/
+	/*Footer*/
+	footer {
+		text-align: center;
+		font-family: "Dancing Script";
+		background-color: #C6D5C5;
+		border-radius: 0px 0px 10px 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	footer div {
+		width: 25%;
+	}
+}

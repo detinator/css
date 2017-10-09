@@ -1,0 +1,171 @@
+@media(min-width:900px) {
+	/*Define Page Font*/
+	@font-face {
+		font-family: "Dancing Script";
+		src: url("Fonts/Dancing Script.ttf");
+	}
+	/*Set Page Background Color and Assets*/
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #02010A;
+		animation: pageLoad 2.5s;
+	}
+	.page_content {
+		width: 900px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 0 auto;
+	}
+	/*Full Page Animation Start*/
+	@keyframes pageLoad {
+		0% {
+			margin-top: 150%
+		}
+		60% {
+			margin-top: -5%
+		}
+		100% {
+			margin-top: 0%
+		}
+	}
+	/*Full Page Animation End*/
+	/*Header Content*/
+	/*Header Block*/
+	header {
+		background-color: #5B7989;
+		border-radius: 10px 10px 0px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+	/*Site Name (Brand)*/
+	.block_brand {
+		font-family: "Dancing Script";
+		color: white;
+		text-align: left;
+		text-shadow: 2px 2px 2px #02010A;
+		padding-left: 20px;
+		padding-top: 15px;
+	}
+	/*Site Menu Start */
+	.block_menu {}
+	.block_menu nav {
+		font-family: "Dancing Script";
+		margin-right: 50px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	.block_menu nav ul li {
+		display: inline;
+	}
+	.block_menu nav ul li a {
+		text-decoration: none;
+		border-radius: 10px;
+		display: inline-block;
+		background-color: #82C386;
+		color: #FFFFFF;
+		padding: 10px;
+	}
+	.block_menu nav ul li a:hover {
+		text-decoration: none;
+		border-radius: 10px;
+		color: #000000;
+		background-color: #33B5E5;
+		box-shadow: 2px 2px 4px #000000;
+	}
+	#active a {
+		text-decoration: none;
+		border-radius: 10px;
+		color: #FFFFFF;
+		background-color: #C6D5C5;
+		box-shadow: 0.5px 0.5px 1px #000000;
+	}
+	/*Site Menu End*/
+	/*Body Content Section*/
+	/*Top Single Centered Image*/
+	.img_solo_center {
+		background-color: #82C3A6;
+		width: 100%;
+	}
+	.img_center {
+		padding: 30px 30px 30px 30px;
+	}
+	/*Mid Section Side by Side Images*/
+	.img_double_lr {
+		font-family: "Dancing Script";
+		background-color: #D5C75F;
+		width: 100%;
+		display: flex;
+		text-align: center;
+	}
+	.img_mid_left, .img_mid_right {
+		width: 50%;
+		padding: 20px;
+	}
+	/*Images Size Redimension and Animation*/
+	#main_image {
+		border: 1px solid;
+		display: block;
+		margin: 0 auto;
+		box-shadow: 2px 2px #02010A;
+	}
+	#anim1 {
+		border: 1px solid;
+		box-shadow: 2px 2px #02010A;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	#anim1:hover {
+		-webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-ms-transform: rotate(10deg);
+		-o-transform: rotate(10deg);
+		transform: rotate(10deg);
+		border: 2px solid;
+		box-shadow: 5px 5px 5px #82C3A6;
+	}
+	#anim2 {
+		border: 1px solid;
+		box-shadow: 2px 2px #02010A;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	#anim2:hover {
+		-webkit-transform: translate(20px, -5px);
+		-moz-transform: translate(20px, -5px);
+		-ms-transform: translate(20px, -5px);
+		-o-transform: translate(20px, -5px);
+		transform: translate(20px, -5px);
+		border: 2px solid;
+		box-shadow: 5px 5px 5px #82C3A6;
+	}
+	/*Animation Body Content End*/
+	/*Footer Start*/
+	footer {
+		text-align: center;
+		font-family: "Dancing Script";
+		background-color: #C6D5C5;
+		border-radius: 0px 0px 10px 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	footer div {
+		width: 25%;
+	}
+	/*Footer End*/
+}
